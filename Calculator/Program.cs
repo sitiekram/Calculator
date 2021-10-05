@@ -10,9 +10,6 @@ namespace Calculator
     {
         private static double num1;
         private static double num2;
-        //public static double num1 { get; set; }
-        //private static double num2 { get; set; }
-
         static void Main(string[] args)
         {
             string toContinue = "";
