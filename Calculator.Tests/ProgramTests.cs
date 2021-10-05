@@ -8,14 +8,10 @@ namespace Calculator.Tests
         [Fact]
         public void AdditionTest()
         {
-
-
             double expected = 24.4;
             double num1 = 10.1;
             double num2 = 14.3;
-
             double actual = Program.Addition(num1, num2);
-
             Assert.Equal(expected, actual);
         }
 
@@ -25,18 +21,15 @@ namespace Calculator.Tests
         public void AdditionWithArrayInputTest(double[] input, double expected)
         {
             double actual = Program.Addition(input);
-
             Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void SubtractionTest()
         {
-
             double expected = -16;
             double num1 = 10;
             double num2 = 26;
-
             double actual = Program.Subtraction(num1, num2);
 
             Assert.Equal(expected, actual);
@@ -54,7 +47,6 @@ namespace Calculator.Tests
         [Fact]
         public void MultiplicationTest()
         {
-
             double expected = 125;
             double num1 = 5;
             double num2 = 25;
@@ -77,8 +69,6 @@ namespace Calculator.Tests
         [Fact]
         public void DivisionTestByZero()
         {
-
-            //double expected = double.PositiveInfinity;
             double num1 = 11;
             double num2 = 0;
 
