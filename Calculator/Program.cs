@@ -88,9 +88,15 @@ namespace Calculator
         {
             bool Successed = false;
             double userInput = 0.0;
+            int count = 0;
             while (!Successed)
             {
+                if (count != 0)
+                {
+                    Console.WriteLine("Please enter a valid double number");
+                }
                 Successed = Double.TryParse(Console.ReadLine(), out userInput);
+                count++;
             }
             return userInput;
         }
@@ -98,10 +104,15 @@ namespace Calculator
         {
             bool Successed = false;
             int userInput = 0;
+            int count = 0;
             while (!Successed)
-            {
+            { 
+                if(count!=0)
+                {
+                    Console.WriteLine("Please enter a valid integer number");
+                }
                 Successed = Int32.TryParse(Console.ReadLine(), out userInput);
-
+                count++;
             }
             return userInput;
         }
