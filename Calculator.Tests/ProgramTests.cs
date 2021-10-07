@@ -55,15 +55,16 @@ namespace Calculator.Tests
 
             Assert.Equal(expected, actual);
         }
-
-        [Theory]
-        [InlineData(6, 2, 3)]
-        [InlineData(3.4, 6.8, 0.5)]
-        public void DivisionTest(double x, double y, double expected)
+        [Fact]
+         public void DivisionTest()
         {
-            double actual = Program.Division(x, y);
+            double num1 = 1;
+            double num2 = 3;
+            double expected = 0.3333;
 
-            Assert.Equal(expected, actual);
+            double actual = Program.Division(num1,num2);
+
+            Assert.Equal(expected, actual,4);
         }
 
         [Fact]
